@@ -1,0 +1,15 @@
+meta {
+  name: Get Deviation
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/deviation?coin=bitcoin
+  body: none
+  auth: none
+}
+
+params:query {
+  coin: bitcoin
+}
