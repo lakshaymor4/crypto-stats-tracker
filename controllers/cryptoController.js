@@ -38,7 +38,7 @@ const getDeviation = async (req, res) => {
 
 const getRoutes = async (req, res) => {
     try {
-        res.status(200).json({ message: "/stats, /deviation" });
+        res.status(200).json({ message: "/stats?coin=matic-network, /deviation?coin=bitcoin" });
     }
     catch (err) {
         res.status(500).json({ message: "Unable to Fetch Routes" });
