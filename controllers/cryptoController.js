@@ -4,7 +4,7 @@ const config = require("../config/config");
 const { Http } = require("winston/lib/winston/transports");
 
 //Note: Implementing getStats assuming that by fetching latest stats you meant doing an api call to gecko and not fetching it from the database
-const getStats = async (req, res, next) => {
+const getStats = async (req, res) => {
     try {
         const { coin } = req.query;
 
@@ -20,7 +20,7 @@ const getStats = async (req, res, next) => {
     }
 };
 
-const getDeviation = async (req, res, next) => {
+const getDeviation = async (req, res) => {
     try {
         const { coin } = req.query;
 
@@ -36,4 +36,13 @@ const getDeviation = async (req, res, next) => {
     }
 };
 
-module.exports = { getStats, getDeviation };
+const getRoutes = async (req, res) => {
+    try {
+        res.status(200).json({ message: "/stats, /deviation" });
+    }
+    catch (err) {
+        res.status(500).json({ message: "Unable to Fetch Routes" });
+    }
+};
+
+module.exports = { getStats, getDeviation, getRoutes };
