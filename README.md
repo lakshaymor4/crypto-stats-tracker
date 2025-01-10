@@ -133,7 +133,7 @@ The application includes:
 
 ## Author
 
-Your Name lakshay.8026@gmail.com
+Lakshay lakshay.8026@gmail.com
 
 ## Acknowledgments
 
