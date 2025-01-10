@@ -45,7 +45,7 @@ NODE_ENV=development
 
 4. Start the application:
 ```bash
-node index,js
+node index.js
 
 ```
 
