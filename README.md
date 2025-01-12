@@ -26,7 +26,7 @@ A production-grade Node.js application that tracks cryptocurrency prices using t
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/crypto-tracker.git
+git clone https://github.com/lakshaymor4/crypto-stats-tracker.git
 cd crypto-tracker
 ```
 
